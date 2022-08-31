@@ -24,8 +24,11 @@ int main() {
     skipList.insert_element(60, "A");
     skipList.insert_element(70, "A");
 
-     
+    skipList.display_list();
     
+    skipList.delete_element(4);
+
+    skipList.display_list();
  
 
     //std::cout << "skipList size:" << skipList.size() << std::endl;
@@ -38,7 +41,7 @@ int main() {
     //skipList.search_element(18);
 
 
-    //skipList.display_list();
+    //
 
     //skipList.delete_element(3);
     //skipList.delete_element(7);

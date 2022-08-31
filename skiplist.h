@@ -350,12 +350,13 @@ void SkipList<K, V>::delete_element(K key) {
         for (int i = 0; i <= _skip_list_level; i++) {
 
             // 这里依然要注意update中存的是什么，是我们指定key的节点，在当前层的前一个结点。
-            if (update[i]->forward[i] != current) //如果下一个不是，直接break,因为再网上的层也不会有了。
+            if (update[i]->forward[i] != current) //如果下一个不是，直接break,因为再往上的层也不会有了。
                 break;
 
-            update[i]->forward[i] = current->forward[i];//跳过current
+            update[i]->forward[i] = current->forward[i];//跳过current，注意此时并没真正释放。
         }
-        //
+        //释放目标节点内存
+        delete current;
 
         // 从上开始遍历，删除上面的空层，中间的无法删除。(中间的指的是上下册层都有，而它空了的层。)
         // 即，如果我们删除的元素的level只有它自己。此时删除该结点后，该层就空了。
