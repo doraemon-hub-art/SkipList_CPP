@@ -1,7 +1,6 @@
 
-> -源项目地址——[基于跳表实现的轻量级键值数据库](https://github.com/youngyangyang04/Skiplist-CPP)
+> - 源项目地址——[基于跳表实现的轻量级键值数据库](https://github.com/youngyangyang04/Skiplist-CPP)
 
-# [English Version](./README-en.md)
 
 # KV存储引擎
 
@@ -83,20 +82,3 @@ sh stress_test_start.sh
 * 压力测试并不是全自动的
 * 跳表的key用int型，如果使用其他类型需要自定义比较函数，当然把这块抽象出来更好
 * 如果再加上一致性协议，例如raft就构成了分布式存储，再启动一个http server就可以对外提供分布式存储服务了
-
-# 关于作者
-
-大家好，我是程序员Carl，[《代码随想录》](https://programmercarl.com/other/publish.html)作者，哈工大师兄，先后在腾讯和百度从事分布式技术研发。
-
-
-# 公众号
-
-更多精彩文章持续更新，微信搜索：「代码随想录」第一时间围观，关注后回复：666，可以获得Carl所有算法专题原创PDF。
-
-<a name="公众号"></a>
-
-<div align="center"><img src="https://code-thinking-1253855093.file.myqcloud.com/pics/20211026122841.png" data-img="1" width="650" height="500"></img></div> 
-
-
-
-
