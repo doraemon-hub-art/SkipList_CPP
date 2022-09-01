@@ -15,7 +15,7 @@
 
 >- 先来张图
 
-![层次感(1) 00_00_00-00_00_30](https://zyximagestorage.oss-cn-beijing.aliyuncs.com/blogimages/%E5%B1%82%E6%AC%A1%E6%84%9F(1)%2000_00_00-00_00_30.gif)
+![层次感](https://zyximagestorage.oss-cn-beijing.aliyuncs.com/blogimages/%E5%B1%82%E6%AC%A1%E6%84%9F(1)%2000_00_00-00_00_30.gif)
 
 >1. 各个节点是如何相连接(关联)的？
 >   - 通过每个节点的`forward`数组，forward数组存储当前节点，在每一层的下一个节点。
