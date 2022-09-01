@@ -147,7 +147,7 @@ for(int i = _skip_list_level; i >= 0; i--) {//控制当前所在层，从最高�
 current = current->forward[0];
 ```
 
-![遍历update](https://zyximagestorage.oss-cn-beijing.aliyuncs.com/blogimages/遍历update(2) 00_00_00-00_00_30.gif)
+![遍历update](https://zyximagestorage.oss-cn-beijing.aliyuncs.com/blogimages/%E9%81%8D%E5%8E%86update(2)%2000_00_00-00_00_30.gif)
 
 ***
 
@@ -167,7 +167,7 @@ if (random_level > _skip_list_level) {
 }
 ```
 
-![更新层次](https://zyximagestorage.oss-cn-beijing.aliyuncs.com/blogimages/更新更次 00_00_00-00_00_30.gif)
+![更新层次](https://zyximagestorage.oss-cn-beijing.aliyuncs.com/blogimages/%E6%9B%B4%E6%96%B0%E6%9B%B4%E6%AC%A1%2000_00_00-00_00_30.gif)
 
 ***
 
@@ -189,7 +189,7 @@ for (int i = 0; i <= random_level; i++) {
 _element_count++;//元素总数++
 ```
 
-![插入节点 00_00_00-00_00_30](https://zyximagestorage.oss-cn-beijing.aliyuncs.com/blogimages/%E6%8F%92%E5%85%A5%E8%8A%82%E7%82%B9%2000_00_00-00_00_30.gif)
+![插入节点](https://zyximagestorage.oss-cn-beijing.aliyuncs.com/blogimages/%E6%8F%92%E5%85%A5%E8%8A%82%E7%82%B9%2000_00_00-00_00_30.gif)
 
 ***
 
