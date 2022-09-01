@@ -15,14 +15,18 @@
 
 >- 先来张图
 
-![层次感](https://zyximagestorage.oss-cn-beijing.aliyuncs.com/blogimages/%E5%B1%82%E6%AC%A1%E6%84%9F(1)%2000_00_00-00_00_30.gif)
+![层次感(1) 00_00_00-00_00_30](https://zyximagestorage.oss-cn-beijing.aliyuncs.com/blogimages/%E5%B1%82%E6%AC%A1%E6%84%9F(1)%2000_00_00-00_00_30.gif)
 
 >1. 各个节点是如何相连接(关联)的？
->   - 通过每个节点的`forward`数组，forward数组存储当前节点，在每一层的下一个节点。
->   - 以头节点为例，头结点的forward存储的是每一层的第一个节点。然后通过第一个节点的forward[level],拿到该层的后面元素...... 一次类推，即可遍历该层所有节点。
->   - 与普通单链表的区别，我们可以大概理解为，上面多了几层简化的结果，下面会用GIF来解释。
+>
+>  - 通过每个节点的`forward`数组，forward数组存储当前节点，在每一层的下一个节点。
+>  - 以头节点为例，头结点的forward存储的是每一层的第一个节点。然后通过第一个节点的forward[level],拿到该层的后面元素...... 以次类推，即可遍历该层所有节点。
+>  - 与普通单链表的区别，我们可以大概理解为，上面多了几层简化的结果，如上面动画所示。
+>
 >2. `update`存的是什么?
->   - 每层中最后一个key小于要插入节点key的节点。
+>
+>  - 每层中最后一个key小于要插入节点key的节点。
+>
 >3. 节点生成的level是多少，该节点就从0层到level层一直都出现。
 >4. `其它详见具体代码中的注释`。
 
@@ -116,8 +120,6 @@ private:
 
 ```
 
-
-
 ***
 
 ### 详解insert函数
@@ -189,9 +191,13 @@ _element_count++;//元素总数++
 
 ![插入节点](https://zyximagestorage.oss-cn-beijing.aliyuncs.com/blogimages/%E6%9B%B4%E6%96%B0%E6%9B%B4%E6%AC%A1(1)%2000_00_00-00_00_30.gif)
 
+***
+
 ## 相关参考
 
 >- [Skip List | Set 2 (Insertion)](https://www.geeksforgeeks.org/skip-list-set-2-insertion/)
 >- [什么是跳表skiplist](https://www.cnblogs.com/Lj-ming/p/14755791.html)
 >- [基于跳表的数据库服务器和客户端](https://github.com/xuyyy1215/Skiplist_server_client)
 >- 以及知识星球中牲活老哥的相关分享。-[跳表总结](https://t.zsxq.com/05AEYVBau)
+
+***
