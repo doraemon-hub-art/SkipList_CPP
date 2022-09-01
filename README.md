@@ -1,6 +1,7 @@
 # 跳表SkipList解析
 
 >- 原项目链接——[基于跳表实现的轻量级键值数据库](https://github.com/youngyangyang04/Skiplist-CPP)
+>- 貌似第一张动图会卡住,可以访问我的个人博客来查看，[【数据结构】跳表SkipList代码解析(C++)](https://banshengua.top/%e3%80%90%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e3%80%91%e8%b7%b3%e8%a1%a8skiplist%e4%bb%a3%e7%a0%81%e8%a7%a3%e6%9e%90c/)。
 
 ## 什么是跳表
 
